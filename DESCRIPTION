@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: David Howell
 Maintainer: David Howell <dehowell@gmail.com>
 Description: Provide tools for persisting and reading datasets from S3.
-License: What license is it under?
+License: MIT license
 Encoding: UTF-8
 LazyData: true
 Imports:
