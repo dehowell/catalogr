@@ -1,9 +1,9 @@
 Package: catalogr
 Type: Package
-Title: Manage datasets in a AWS
+Title: Manage a catalogue of datasets in AWS
 Version: 0.1.0
 Author: David Howell
-Maintainer: David Howell <david.howell@coxautoinc.com>
+Maintainer: David Howell <dehowell@gmail.com>
 Description: Provide tools for persisting and reading datasets from S3.
 License: What license is it under?
 Encoding: UTF-8
