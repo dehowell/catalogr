@@ -4,6 +4,8 @@ CONFIG <- new.env(parent = emptyenv())
 #'
 #' @param bucket
 #' @param profile
+#'
+#' @export
 initialize <- function(bucket = NULL, profile = "default") {
   CONFIG[['bucket']] <- bucket
   CONFIG[['profile']] <- profile
@@ -32,6 +34,8 @@ datasets <- function() {
 #' @param dataset_name
 #'
 #' @return data frame of the dataset
+#'
+#' @export
 read_dataset <- function(dataset_name) {
   aws.signature::use_credentials(profile = CONFIG[["profile"]])
   bucket <- CONFIG[["bucket"]]
@@ -62,8 +66,6 @@ read_dataset <- function(dataset_name) {
 #'
 #' @return
 #' @export
-#'
-#' @examples
 write_dataset <- function(df, format = "feather", ...) {
   aws.signature::use_credentials(profile = CONFIG[["profile"]])
 
