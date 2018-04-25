@@ -45,7 +45,7 @@ read_dataset <- function(dataset_name) {
     purrr::map_chr(~ .$Key) %>%
     purrr::keep(~ . != path) %>%
     unname() %>%
-    stringr::str_sort(decreasing = FALSE)
+    stringr::str_sort(decreasing = TRUE)
 
   dataset_key <- versions[1]
   reader <- switch(tools::file_ext(dataset_key),
